@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My School</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="nav">
+        <img src="assets/logo.png" alt="Logo" class="logo">
+        <ul class="nav-items">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Our Profile</a></li>
+            <li><a href="#facilitation">Facilitation</a></li>
+            <li><a href="#message">Message Us</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div id="home" class="home">
+            <h1>Hi Wine, welcome to our website!</h1>
+            <h4>Please Enjoy</h4>
+            <img src="assets/header.jpg" alt="Header Image">
+        </div>
+        <hr>
+    </header>
+
+    <div id="facilitation" class="facilitation">
+        <div class="fasilitas">
+            <h1>Our Facillitation</h1>
+            <div class="box">
+                <div>
+                    <div class="circle" style="background-image: url('assets/football.jpg');"></div>
+                    <h4>Football Arena</h4>
+                </div>
+                <div>
+                    <div class="circle" style="background-image: url('assets/auditorium.jpg');"></div>
+                    <h4>Auditorium</h4>
+                </div>
+                <div>
+                    <div class="circle" style="background-image: url('assets/library.jpg');"></div>
+                    <h4>Library</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div id="message" class="message">
+        <h1>Message Us</h1>
+        <div class="contact-box">
+            <div class="contact-left">
+                <form>
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="input-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob">
+                    </div>
+                    <div class="input-group gender-checkbox">
+                        <label>Gender</label>
+                        <div>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea rows="5" id="message" name="message"></textarea>
+                    </div>
+                    <button type="submit">Send Request</button>
+                </form>
+            </div>
+            <div class="contact-right">
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td>Wine Nadira Maulana</td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td>24/06/03</td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>Female</td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td>Belajar buat web</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="footer">
+        <p> Created by Wine Nadira Maulana</p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

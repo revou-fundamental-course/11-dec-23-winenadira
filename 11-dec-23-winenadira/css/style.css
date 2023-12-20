@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-top: -30px;
+}
+
+h4 {
+    margin-bottom: 35px;
+}
+
+.logo {
+    width: 175px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+}
+
+.nav-items li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+    height: 600px;
+    margin-bottom: 40px;
+}
+
+.facilitation .box{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+}
+
+.facilitation div {
+    text-align: center;
+}
+
+.facilitation .fasilitas h1 {
+    margin-top: 50px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.message {
+    width: 80%;
+    margin: 50px auto;
+}
+.message h1 {
+    margin-top: -10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.contact-box {
+    background: #fff;
+    display: flex;
+}
+
+.contact-left {
+    flex-basis: 60%;
+    padding:40px 60px;
+}
+
+.contact-right {
+    flex-basis: 40%;
+    padding:40px;
+    background: #1c00b5;
+    color: #fff;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.gender-checkbox {
+    display: flex;
+}
+
+.gender-checkbox div {
+    margin-right: 10px;
+}
+
+.gender-checkbox label {
+    margin-right: 40px;
+}
+
+.gender-checkbox input {
+    margin-right: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+button {
+    background-color: #1c00b5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000;
+}
+
+tr td:first-child {
+    padding-right: 20px;
+}
+
+tr td {
+    padding-top: 20px;
+}
+
+.footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+@media only screen and (max-width:850px){
+    .menu-btn{
+        display: block;
+    }
+
+    .nav{
+        padding: 0;
+    }
+
+    .logo{
+        align-items: center;
+        position: absolute;
+        top: 5px;
+    }
+
+    h1 {
+        margin-top: 150px;
+    }
+
+    h4 {
+        margin-bottom: 30px;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+        display: none;
+    }
+
+    .nav-items a{
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .nav-items.mobile-menu {
+        height: 200px;
+    }
+
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+
+    .nav-items li {
+        margin: 30px auto;
+    }
+
+    .message .pesan {
+        align-items: stretch;
+    }
+
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+}
